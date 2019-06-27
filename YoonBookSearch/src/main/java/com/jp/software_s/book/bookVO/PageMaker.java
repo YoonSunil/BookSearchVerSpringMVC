@@ -33,9 +33,9 @@ public class PageMaker {
 
         startPage = (endPage - displayPageNum) + 1;
 
+        //Listの最大page番号を計算する
         if ((totalCount & 20) != 0) {
             setMaxPage(totalCount / 20 + 1);
-
         } else {
             setMaxPage(totalCount / 20);
         }
@@ -54,7 +54,7 @@ public class PageMaker {
     public int getFrontPage() {
         return frontPage;
     }
-
+    //"<<"BOTTONを押す時に0Page目に移動しないように設定
     public void setFrontPage(int frontPage) {
         if (frontPage == 1) {
             this.frontPage = 1;

@@ -6,6 +6,7 @@ import com.jp.software_s.book.bookVO.BookVO;
 import com.jp.software_s.book.bookVO.PagingDTO;
 import com.jp.software_s.book.bookVO.SearchDTO;
 
+//Controllerで呼ぶMethodでありInterface
 public interface BookService {
 
     void insert(BookVO bookVO) throws Exception;

@@ -6,6 +6,7 @@ import com.jp.software_s.book.bookVO.BookVO;
 import com.jp.software_s.book.bookVO.PagingDTO;
 import com.jp.software_s.book.bookVO.SearchDTO;
 
+//Serviceに送る情報の処理をするMethodのInterface
 public interface BookDAO {
 
     void insert(BookVO bookVO) throws Exception;

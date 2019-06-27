@@ -30,6 +30,7 @@ public class BookDAOImpl implements BookDAO {
         con = MariaDBConnect.getConnection();
         StringBuffer sb = new StringBuffer();
 
+        //SQL文を作成する
         sb.append("INSERT INTO ");
         sb.append("book (isbn, jancode, title, writer, pub_com, pub_date,update_time_stamp,create_time_stamp) ");
         sb.append("VALUES ");
@@ -39,11 +40,10 @@ public class BookDAOImpl implements BookDAO {
         sb.append(", '" + bookVO.getWriter() + "'");
         sb.append(", '" + bookVO.getPubCom() + "'");
         sb.append(", '" + bookVO.getPubDate() + "'");
+        //TIME_STAMPの部分
         sb.append(", now()");
         sb.append(", now()");
         sb.append(")");
-
-        System.out.println(sb);
 
         ps = con.prepareStatement(sb.toString());
         rs = ps.executeQuery();
@@ -200,10 +200,13 @@ public class BookDAOImpl implements BookDAO {
         ps = MariaDBConnect.getConnection().prepareStatement(sb.toString());
         rs = ps.executeQuery();
 
+        //SQLで検索した内容を入れるListを準備する
         List<BookVO> list = new ArrayList<BookVO>();
 
+        //SQLの内容のROWの次があったら
         while (rs.next()) {
             BookVO data = new BookVO();
+            //SQLのColumnの順番に合わせて入れる
             data.setBookId(rs.getInt("book_id"));
             data.setIsbn(rs.getLong("isbn"));
             data.setJanCode(rs.getLong("jancode"));
@@ -211,6 +214,7 @@ public class BookDAOImpl implements BookDAO {
             data.setWriter(rs.getString("writer"));
             data.setPubCom(rs.getString("pub_com"));
             data.setPubDate(rs.getString("pub_date"));
+            //ListにBeanの情報を入れる
             list.add(data);
         }
         return list;

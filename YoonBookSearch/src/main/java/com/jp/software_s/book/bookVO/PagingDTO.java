@@ -2,10 +2,12 @@ package com.jp.software_s.book.bookVO;
 
 import org.springframework.stereotype.Component;
 
+//Pagination Setting
 @Component
 public class PagingDTO {
-
+    //PageNunber
     private int page;
+    //一つの画面に表示するDATAの数の設定
     private int perPageNum;
 
     public PagingDTO(){

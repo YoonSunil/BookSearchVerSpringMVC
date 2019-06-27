@@ -2,6 +2,7 @@ package com.jp.software_s.book.bookVO;
 
 import org.springframework.stereotype.Component;
 
+//検索する時のText AreaのMapping
 @Component
 public class SearchDTO {
 

@@ -11,6 +11,7 @@ import com.jp.software_s.book.bookVO.PagingDTO;
 import com.jp.software_s.book.bookVO.SearchDTO;
 import com.jp.software_s.book.daoList.BookDAO;
 
+//ServiceのImplementしDAOをreturnする
 @Service
 public class BookServiceImpl implements BookService {
 

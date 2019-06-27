@@ -2,6 +2,7 @@ package com.jp.software_s.book.bookVO;
 
 import org.springframework.stereotype.Component;
 
+//Book TABLEをMappingするBean
 @Component
 public class BookVO {
 
