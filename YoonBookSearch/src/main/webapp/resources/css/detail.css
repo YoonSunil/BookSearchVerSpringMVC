@@ -1,0 +1,201 @@
+@CHARSET "UTF-8";
+
+.container {
+	margin: 50px auto;
+	max-width: 70%;
+}
+
+h4 {
+	font-weight: 500;
+}
+
+.inline {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	margin: 10px 0px;
+}
+
+label {
+	padding: 12px;
+	display: inline-block;
+}
+
+.row {
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	display: flex;
+	height: 65px;
+}
+
+input[type=text], input[type=password] {
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	resize: vertical;
+	width: 85%;
+}
+
+button {
+	background-color: #4f5154;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.error {
+	text-align: center;
+	background-color: rgba(253, 233, 217, 1);
+	color: red;
+	padding: 10px;
+	/* visibility: hidden; */
+	margin-bottom: 50px;
+}
+
+.wd10 {
+	width: 10%;
+	float: left;
+}
+
+.wd20 {
+	width: 20%;
+	float: left;
+	text-align: left;
+}
+
+.wd25 {
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.wd30 {
+	width: 30%;
+	float: left;
+}
+
+.wd40 {
+	width: 40%;
+	float: left;
+}
+
+.wd50 {
+	width: 50%;
+	float: left;
+}
+
+.wd75 {
+	width: 75%;
+	float: left;
+}
+
+.wd80 {
+	width: 80%;
+	float: left;
+}
+
+.wd100 {
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.login {
+	margin: 30px 0px;
+}
+
+h5 {
+	font-weight: normal;
+	color: grey;
+	padding: 10px;
+	display: inline-block;
+	margin: 0 0 0 0;
+}
+
+.right {
+	float: right;
+}
+
+.displayflex {
+	display: flex;
+}
+
+table, td, th {
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+th {
+	background-color: #ffffcc;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	padding: 15px;
+}
+
+button.pink {
+	width: 150px;
+	background-color: rgba(255, 102, 153, 1);
+}
+
+button.grey {
+	width: 150px;
+	background-color: grey;
+	margin-right: 15px;
+}
+
+table {
+	padding-bottom: 20px;
+}
+
+button.blue {
+	width: 150px;
+	background-color: #0070c0;
+}
+
+.pagination {
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+	border: 1px solid #ddd;
+}
+
+.pagination a.active {
+	background-color: rgba(253, 233, 217, 1);
+	color: black;
+}
+
+.pagination a:hover {
+	background-color: #ddd;
+}
+
+.center {
+	text-align: center;
+}
+
+p {
+	margin-top: 0;
+	font-size: small;
+	color: dimgray;
+}
+
+strong {
+	color: red;
+}

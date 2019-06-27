@@ -1,0 +1,104 @@
+@CHARSET "UTF-8";
+
+header h2 {
+    display: contents;
+}
+
+header a {
+   float : right;
+}
+
+.container {
+	margin: 100px auto;
+	max-width: 500px;
+}
+
+.container_regist {
+	margin: 100px auto;
+	max-width: 800px;
+}
+
+.inline {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	margin: 10px 0px;
+}
+
+table {
+	padding-bottom: 20px;
+}
+
+label {
+	padding: 12px 20px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+input[type=text], input[type=password] {
+	padding: 12px 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: rgba(0, 112, 192, 1);
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.error {
+	text-align: center;
+	background-color: rgba(253, 233, 217, 1);
+	color: red;
+	padding: 10px;
+	visibility: hidden;
+	margin-bottom: 100px;
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+.wd10 {
+	width: 10%;
+}
+
+.wd20 {
+	width: 20%;
+}
+
+.wd30 {
+	width: 30%;
+}
+
+.wd40 {
+	width: 40%;
+}
+
+.wd50 {
+	width: 50%;
+}
+
+.wd70 {
+	width: 70%;
+}
+
+.wd80 {
+	width: 80%;
+}
+
+.wd100 {
+	width: 100%;
+}
+
+.login {
+	margin: 30px 0px;
+}
